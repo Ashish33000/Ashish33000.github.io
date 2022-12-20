@@ -353,7 +353,7 @@
     #skills{
         position: relative;
         top:-350px;
-        left:50px;
+        left:150px;
     }
     #skills img{
         width: 150px;
@@ -369,6 +369,9 @@
       gap:60px;
   
   }
+  #round{
+    margin-left: 100px;
+}
     
     
 
@@ -394,10 +397,13 @@
     #abt h3{
         width: 200px;
     }
+    #round{
+      margin-left: 10px;
+  }
     #skills{
       position: relative;
       top:-350px;
-      left:10px;
+      left:90px;
   }
     #pic img{
         position: absolute; 
