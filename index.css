@@ -84,7 +84,7 @@
 #skills{
     position: relative;
     top:-350px;
-    left:500px;
+    left:400px;
 }
 #skills img{
     width: 150px;
@@ -241,7 +241,7 @@
   }
   
   #round{
-      margin-left: 400px;
+      margin-left: 300px;
   }
 /* solar system ends */
 /* project */
@@ -413,7 +413,7 @@
         height: 120px;
         border: 10px wheat solid;
         
-        
+      
     }
     #project{
   
