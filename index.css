@@ -353,7 +353,7 @@
     #skills{
         position: relative;
         top:-350px;
-        left:100px;
+        left:50px;
     }
     #skills img{
         width: 150px;
@@ -394,6 +394,11 @@
     #abt h3{
         width: 200px;
     }
+    #skills{
+      position: relative;
+      top:-350px;
+      left:10px;
+  }
     #pic img{
         position: absolute; 
         left:30px; 
