@@ -5,6 +5,8 @@
     height:400px;
 }
 #navbar{
+  position: relative;
+  
     width: auto;
     height: 80px;  
     display: flex;
@@ -301,7 +303,14 @@
 }
 #contact h1{
   color: white;
-  margin-left: 200px;
+  margin-left: 100px;
+}
+#contact img{
+  width:50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left:100px ;
+  border-radius: 10px;
 }
 
 
@@ -372,6 +381,16 @@
   #round{
     margin-left: 100px;
 }
+#contact h1{
+  
+  margin-left: 10px;
+}
+#contact img{
+  
+  margin-top: 30px;
+  margin-left:10px ;
+  
+}
     
     
 
@@ -423,6 +442,16 @@
       grid-template-columns: repeat(1,1fr);
       gap:60px;
   
+  }
+  #contact h1{
+  
+    margin-left: 10px;
+  }
+  #contact img{
+    
+    margin-top: 30px;
+    margin-left:10px ;
+    
   }
 
 }
