@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
 #wallpaper img{
     margin-top: 3px;
     width:100%;
@@ -7,7 +10,7 @@
 #navbar{
   position: fixed;
     top:2px;
-    z-index: 2px;
+  
     width: 100%;
     height: 80px;  
     display: flex;
@@ -96,8 +99,8 @@
 }
 /* solar system starts */
 .orbit {
-    --size: 12rem;
-    --speed: 120s;
+    --size: 1rem;
+    --speed: 2s;
   }
   *,
   *::before,
@@ -148,16 +151,16 @@
   .orbit li {
     --text-bg: blue;
     position: absolute;
-    width:5rem;
+    width:10rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    font-weight: 500;
+    font-weight: 10;
     color: var(--white-light);
     text-align: center;
     line-height: 1;
     display: grid;
     place-items: center;
-    border: 1px solid rgb(172, 172, 172);
+    border: 1px solid rgb(243, 240, 240);
   }
   .orbit li:hover{
      border: 1px solid rgb(250,93,0); 
