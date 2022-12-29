@@ -100,7 +100,7 @@ body{
 /* solar system starts */
 .orbit {
     --size: 1rem;
-    --speed: 2s;
+    --speed: 1s;
   }
   *,
   *::before,
