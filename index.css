@@ -2,35 +2,22 @@
 body{
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
-#wallpaper img{
-    margin-top: 3px;
-    width:100%;
-    height:400px;
-}
-#navbar{
-  position: fixed;
-    top:2px;
-  
-    width: 100%;
-    height: 80px;  
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    border-radius: 5px;   
 
+
+
+
+
+body{
+    background-image: url(https://user-images.githubusercontent.com/87129673/215338813-89f16807-c473-4adb-8d8a-bc9a29d90197.gif);
+   margin: auto;
 }
-#navbar a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    color:white;
-}
+/* desccription */
 #desc{
-    
-    position:absolute;
-    left:450px;
-    top:200px;
+  margin-top: 150px; 
+  margin-left: 30%;
+  height: 200px;
+
+   
 }
 #desc h1{
     color: white;
@@ -51,206 +38,60 @@ body{
 #desc button:hover{
     background-color: aqua;   
 }
-#about #bcg{
-    margin-top: 3px;
-    width:100%;
-    height:300px;
-
+/* about */
+#about{
+    margin: auto;
+    display: flex;   
+    height: 300px;
+    justify-content: center;
+    flex-wrap: wrap;   
 }
-#abt{
-    position: absolute;
-    left:400px;
+#abt{    
+    width: 60%;
 }
 #abt h1{
+    margin-left: 60px;
     color: white;
     font-size: 2 rem;
 }
-#abt h3{
+#abt h4{
+    margin-left: 40px;
     color: white; 
-    width: 500px;
+    width: 600px;
+}
+#pic{
+    width: 30%;
+    
 }
 #pic img{
-    position: absolute; 
-    left:150px; 
-    top:450px; 
-    width:230px;
-    height: 230px;
+    margin-left: 15%;
+    margin-top: 10%;
+    width:200px;
+    height: 200px;
     border: 10px wheat solid;
     
     
 }
+/* skill */
 #skill{
-    border: 3px rgb(29, 10, 10) solid;
-    margin-top: 3px;
-    width:100%;
-    height:600px;
-    background-color: bisque;
+    height: auto; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5px;
+}
+#skill>div{
+    
+    width: 80%;
+    height: 80%;
 
 }
-#skills{
-    position: relative;
-    top:-350px;
-    left:400px;
+#skill img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
 }
-#skills img{
-    width: 150px;
-    width:150px;
-    border-radius: 50%;
-}
-/* solar system starts */
-.orbit {
-    --size: 1rem;
-    --speed: 1s;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  
-  ul[role=list],
-  ol[role=list] {
-    list-style: none;
-  }
-  img,
-  picture {
-    max-width: 100%;
-    display: block;
-  } 
-  
-  .orbit {
-      margin-top: 150px;
-      margin-bottom: 150px;
-    --size:20rem;
-  
-  }
-  .orbit .center-image {
-    width: var(--size);
-    position: relative;
-    z-index: 10;
-  }
-  .orbit .center-image img {
-    position:absolute;
-  }
-  
-  .orbit .center-image img:not(:first-child):hover {
-    opacity: 100px;
-  }
-  .orbit ul {
-    display: grid;
-    place-items: center;
-    width: var(--size);
-    height: var(--size);
-    position: relative;
-    list-style: none;
-    --icon-bg: var(--green-light);
-    --text-bg: var(--green-dark);
-    transform-origin: center;
-    animation: orbit var(--speed) linear infinite;
-  }
-  .orbit li {
-    --text-bg: blue;
-    position: absolute;
-    width:10rem;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    font-weight: 10;
-    color: var(--white-light);
-    text-align: center;
-    line-height: 1;
-    display: grid;
-    place-items: center;
-    border: 1px solid rgb(243, 240, 240);
-  }
-  .orbit li:hover{
-     border: 1px solid rgb(250,93,0); 
-     
-  }
-  .orbit ul:hover {
-    animation-play-state: paused;
-    --orbit-play-state: paused;
-  }
-  .orbit li img{
-    width:60%;
-    height:60%;
-  }
-  .orbit li > * {
-    width: 10%;
-    height: 10%;
-    display: grid;
-    place-items: center;
-    border-radius: inherit;
-    position: absolute;
-    animation: orbit var(--speed) linear reverse infinite, throb 1s var(--throb-delay) ease-in-out infinite alternate;
-    animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
-  }
-  .orbit li:nth-child(1) {
-    --icon-bg: var(--blue-light);
-    --text-bg: var(--blue-dark);
-    transform: translate(15rem, 0rem);
-  }
-  .orbit li:nth-child(2) {
-    --icon-bg: var(--green-light);
-    --text-bg: var(--green-dark);
-    transform: translate(10rem, 10rem);
-  }
-  .orbit li:nth-child(3) {
-    --icon-bg: var(--pink-light);
-    --text-bg: var(--pink-dark);
-    transform: translate(0, 15rem);
-  }
-  
-  .orbit li:nth-child(4) {
-    --icon-bg: var(--red-light);
-    --text-bg: var(--red-dark);
-    transform: translate(-10rem, 10rem);
-  }
-  
-  .orbit li:nth-child(5) {
-    --icon-bg: var(--brown-light);
-    --text-bg: var(--brown-dark);
-    transform: translate(-15rem, 0rem);
-  }
-  
-  .orbit li:nth-child(6) {
-    --icon-bg: var(--yellow-light);
-    --text-bg: var(--yellow-dark);
-    transform: translate(-10rem, -10rem);
-  }
-  
-  .orbit li:nth-child(7) {
-    --icon-bg: var(--purple-light);
-    --text-bg: var(--purple-dark);
-    transform: translate(0, -15rem);
-  }
-  .orbit li:nth-child(8) {
-    --icon-bg: var(--orange-light);
-    --text-bg: var(--orange-dark);
-    transform: translate(10rem, -10rem);
-  }
-  /* ------------------------------------------------------------- */
-  
-  @keyframes orbit {
-    100% {
-      rotate: 1turn;
-    }
-  }
-  @keyframes hold-position {
-    100% {
-      rotate: -1turn;
-    }
-  }
-  @keyframes throb {
-    100% {
-      scale: 1.05;
-    }
-  }
-  
-  #round{
-      margin-left: 300px;
-  }
-/* solar system ends */
-/* project */
+/* Project */
 #project{
   
     width:100%;
@@ -277,7 +118,7 @@ body{
   height: 100%;
 }
 #c2{
-
+  background-color: green;
   width:100%;
   height:45% ;
 
@@ -316,146 +157,174 @@ body{
   margin-left:100px ;
   border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-/* Medium Screen */
-@media only screen and (min-width: 500px) and (max-width: 768px){
+/* contact */
+#contact{
+   
+    background-color: black;
+    display: flex;
+    gap:20px;
+    font-size: 1.2rem;
+    color: white;
+}
+#contact>div{
     
-    #desc{
-        position:absolute;
-        left:100px;
-        top:200px;
+    width: 25%;
+    height: 100%;
+}
+#contact>div img{
+    width: 60%;
+    height: 60%;
+}
+#contact h3{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+#contact p{    
+    margin-left: 10%;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px){
+    #desc{        
+        margin-left: 15%;     
+      
+      }
+      #about{
+       
+        margin: auto;
+        display: grid;   
+        height: 500px;
+        
+        
     }
-    #abt{
-        position: absolute;
-        left:300px;
+    #abt{    
+        width: 80%;
     }
     #abt h1{
+        
+        margin-left: 150px;
         color: white;
         font-size: 1 rem;
     }
-    #abt h3{
-        width: 200px;
+    #abt h4{
+        margin-left: 40px;
+        color: white; 
+        width: 400px;
+    }
+    #pic{
+        width: 100%;
+        
     }
     #pic img{
-        position: absolute; 
-        left:130px; 
-        top:550px; 
-        width:120px;
-        height: 120px;
+        margin-left: 35%;
+        margin-top: 10%;
+        width:150px;
+        height: 150px;
         border: 10px wheat solid;
         
         
     }
     #skill{
-        border: 3px rgb(29, 10, 10) solid;
-        margin-top: 3px;
-        width:100%;
-        height:600px;
-        background-color: bisque;
-    
-    }
-    #skills{
-        position: relative;
-        top:-350px;
-        left:150px;
-    }
-    #skills img{
-        width: 150px;
-        width:150px;
-        border-radius: 50%;
+        height: auto; 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:5px;
     }
     #project{
   
-      width:100%;
-      height:auto;
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap:60px;
-  
-  }
-  #round{
-    margin-left: 100px;
-}
-#contact h1{
-  
-  margin-left: 10px;
-}
-#contact img{
-  
-  margin-top: 30px;
-  margin-left:10px ;
-  
-}
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:60px;
     
+    }
+    #contact{
+        
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    #contact>div{
     
+        width: 100%;
+        height: 100%;
+    }
+    #contact>div img{
+        width: 100%;
+        height: 100%;
+    }
 
 }
-/* small screen */
 @media only screen and (min-width: 200px) and (max-width: 499px){
     #desc{
-        position:absolute;
-        left:80px;
-        top:150px;
+        margin-left: 10%;
+       
+      }
+      #about{
+        margin-left: -100px;
+              
+        display: grid;   
+        height: 600px;
+        
+        
     }
-    #navbar a{
-       display: none;
-    }
-    #abt{
-        position: absolute;
-        left:200px;
+    #abt{    
+        width: 80%;
     }
     #abt h1{
+        
+        margin-left: 150px;
         color: white;
         font-size: 1 rem;
     }
-    #abt h3{
-        width: 200px;
+    #abt h4{
+        margin-left: 40px;
+        color: white; 
+        width: 300px;
     }
-    #round{
-      margin-left: 10px;
-  }
-    #skills{
-      position: relative;
-      top:-350px;
-      left:90px;
-  }
+    #pic{
+        width: 100%;
+        
+    }
     #pic img{
-        position: absolute; 
-        left:30px; 
-        top:550px; 
-        width:120px;
-        height: 120px;
+        margin-left: 35%;
+        margin-top: 10%;
+        width:150px;
+        height: 150px;
         border: 10px wheat solid;
         
-      
+        
+    }
+    #skill{
+        height: auto; 
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:5px;
     }
     #project{
   
-      width:100%;
-      height:auto;
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap:60px;
-  
-  }
-  #contact h1{
-  
-    margin-left: 10px;
-  }
-  #contact img{
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:60px;
     
-    margin-top: 30px;
-    margin-left:10px ;
+    }
+    #contact{
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    #contact>div{
     
-  }
+        width: 100%;
+        height: 100%;
+    }
+    #contact>div img{
+        width: 60%;
+        height: 60%;
+    }
 
 }
