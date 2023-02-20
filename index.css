@@ -145,7 +145,7 @@ body{
   font-size: 0.6rem;
 }
 #contact h1{
-  color: white;
+  color: rgb(24, 22, 22);
   margin-left: 100px;
 }
 #contact img{
@@ -201,12 +201,12 @@ body{
     #abt h1{
         
         margin-left: 150px;
-        color: white;
+       
         font-size: 1 rem;
     }
     #abt h4{
         margin-left: 40px;
-        color: white; 
+       
         width: 400px;
     }
     #pic{
@@ -273,12 +273,12 @@ body{
     #abt h1{
         
         margin-left: 150px;
-        color: white;
+      
         font-size: 1 rem;
     }
     #abt h4{
         margin-left: 40px;
-        color: white; 
+       
         width: 300px;
     }
     #pic{
