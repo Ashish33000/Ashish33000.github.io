@@ -21,6 +21,7 @@ body{
 #desc button{
     border: 0px;
     background-color: rgb(31, 30, 30);
+  
     border-radius: 8px;
     padding: 10px 10px;
 
@@ -29,7 +30,7 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: black;    
+    color: rgb(248, 247, 247);    
 }
 #desc button:hover{
     background-color: rgb(68, 190, 190);   
