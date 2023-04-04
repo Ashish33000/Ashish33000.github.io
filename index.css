@@ -76,13 +76,13 @@
     animation-iteration-count: 1;
     animation-name: para;
   }
-  #res2{
+  #iresume-button-2{
     background-color: rgb(0, 9, 128);
     padding: 10px 15px;
     color: white;
 
   }
-  #res2 a{
+  #iresume-button-2 a{
     text-decoration: none;
     
 
