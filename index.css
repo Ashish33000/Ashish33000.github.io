@@ -1,329 +1,543 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-body{
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-}
-
-
-
-
-
-/* desccription */
-#desc{
-  margin-top: 150px; 
-  margin-left: 30%;
-  height: 200px;
-
-   
-}
-#desc h1{
-    color: rgb(20, 19, 19);
-}
-#desc button{
-    border: 0px;
-    background-color: rgb(31, 30, 30);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
   
-    border-radius: 8px;
-    padding: 10px 10px;
+  body {
+    background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65));
+  }
+  .heading{
+    font-family: system-ui;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 2px var(--primary-color);
+    color: rgb(0, 0, 0);
+  }
 
-}
-#desc button a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(248, 247, 247);    
-}
-#desc button:hover{
-    background-color: rgb(68, 190, 190);   
-}
-/* about */
-#about{
-    margin: auto;
-    display: flex;   
-    height: 300px;
-    justify-content: center;
-    flex-wrap: wrap;   
-}
-#abt{    
-    width: 60%;
-}
-#abt h1{
-    margin-left: 60px;
-    color: rgb(15, 14, 14);
-    font-size: 2 rem;
-}
-#abt h4{
-    margin-left: 40px;
-    color: rgb(14, 13, 13); 
-    width: 600px;
-}
-#pic{
-    width: 30%;
-    
-}
-#pic img{
-    margin-left: 15%;
-    margin-top: 10%;
-    width:200px;
-    height: 200px;
-    border: 10px rgb(179, 163, 134) solid;
-    
-    
-}
-/* skill */
-#skill{
-    height: auto; 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:5px;
-}
-#skill>div{
-    
-    width: 80%;
-    height: 80%;
-
-}
-#skill img{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-/* Project */
-#project{
-  
-    width:90%;
-    margin:auto ;
-    height:auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:50px;
-    margin-bottom: 30px;
-
-}
-#project>div{
-  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width:auto;
-    height:600px;
-
-}
-
-#c1{
-  
-  width:100%;
-  height:55% ;
-}
-#c1 img{
-  width: 100%;
-  height: 100%;
-}
-#c2{
-  background-color: green;
-  width:100%;
-  height:45% ;
-
-}
-#c2 h4,#c2 p{ 
-  margin-left: 25px;
-}
-#c2>button{
-  background-color: black;
-  padding:5px 5px;
-  margin-left: 20px;
-  border-radius: 5%;
-}
-#c2>button a{
-  text-decoration: none;
-  color: rgb(23, 44, 63);
-  font-size: 1.3rem;;
- 
-}
-#contact{
-  margin-top: 5px;
-  
-  height: 300px;
-  width:100%;
-  background-color: black;
-  font-size: 0.6rem;
-}
-#contact h1{
-  color: rgb(24, 22, 22);
-  margin-left: 100px;
-}
-#contact img{
-  width:50px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left:100px ;
-  border-radius: 10px;
-}
-/* contact */
-#contact{
-   
-    background-color: black;
+  /* home */
+  #home {
+    padding-top: 12em;
     display: flex;
-    gap:20px;
-    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto 5em auto;
+  }
+  
+  .child1 {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 30px 30px 0 30px;
+  }
+  #user-details {
     color: white;
-}
-#contact>div{
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1rem rgb(122, 70, 70);
+  }
+  
+  .child2 {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 50px;
+  }
+  
+  .child2 img {
+    width: 300px;
+    border-radius: 5% 5%;
+    box-shadow: 2px 2px 10px rgb(161, 40, 40);
+    transition: all 1s;
+  }
+  .child2 img:hover{
+   /* width: 310px; */
+   transform: translateX(-5rem);
+   box-shadow: 2px 2px 10px rgb(103, 212, 239),  -2px -2px 10px rgb(48, 57, 128);
+   object-fit: contain;
+   cursor: pointer;
+  }
+  
+  
+  .child1 h1 {
+    font-size: 2.5rem;
+  text-shadow: 2px 2px 2px  rgb(255, 255, 255);
+  
+  }
+  
+  .child1 h2 {
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: para;
+  }
+  #res2{
+    background-color: rgb(0, 9, 128);
+    padding: 10px 15px;
+    color: white;
+
+  }
+  #res2 a{
+    text-decoration: none;
     
-    width: 25%;
-    height: 100%;
-}
-#contact>div img{
+
+  }
+  
+  /* home */
+  #about{
+    text-align: center;
+  }
+  #about h1 {
+    font-family: system-ui;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+  }
+  #about h2 {
+    font-family: system-ui;
+    color: white;
     width: 60%;
-    height: 60%;
-}
-#contact h3{
-    margin-top: 20%;
-    margin-left: 10%;
-}
-#contact p{    
-    margin-left: 10%;
-}
-
-
-@media only screen and (min-width: 500px) and (max-width: 768px){
-    #desc{        
-        margin-left: 15%;     
-      
-      }
-      #about{
-       
-        margin: auto;
-        display: grid;   
-        height: 500px;
-        
-        
-    }
-    #abt{    
-        width: 80%;
-    }
-    #abt h1{
-        
-        margin-left: 150px;
-       
-        font-size: 1 rem;
-    }
-    #abt h4{
-        margin-left: 40px;
-       
-        width: 400px;
-    }
-    #pic{
-        width: 100%;
-        
-    }
-    #pic img{
-        margin-left: 35%;
-        margin-top: 10%;
-        width:150px;
-        height: 150px;
-        border: 10px wheat solid;
-        
-        
-    }
-    #skill{
-        height: auto; 
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:5px;
-    }
-    #project{
+    margin: 1rem auto 3em auto;
+    font-size: 1.5rem;
+  }
   
-        width:100%;
-        height:auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:60px;
+  
+  
+   #skills{
+    display: grid;
+    width: 80%;
+    margin:  0 auto;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .skills-card{
+    margin: 2rem;
+  }
+  
+  .name img {
+    margin-top: -5px;
+    height: 150px;
+    object-fit: contain;
+    width:130px;
+    background-color: #ffffff3c;
+    border: 2px solid rgba(255, 255, 255, 0.645);
+  }
+
+
+ .name:hover{
+ transform: translatey(-1rem);
+ box-shadow: 1px 1px 10px rgb(38, 139, 60),  -2px -2px 10px rgb(8, 20, 110);
+ object-fit: contain;
+ cursor: pointer;
+}
+  
+ 
+  
+  
+
+  #projects{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card {
+    color: white;
+    border-bottom: 2px double aqua;
+    width: 90%;
+    margin: 2em auto;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .project-card img{
+    width: 80%;
+    box-shadow: 2px 2px 19px rgb(255, 255, 255);
+  }
+  .project-card img:hover{
+    transform: translateX(-1rem);
+    box-shadow: 1px 1px 10px rgb(38, 139, 60),  -2px -2px 10px rgb(8, 20, 110);
+    object-fit: contain;
+    cursor: pointer;
+   }
+  .project-card p a{
+    font-size: 1.6rem;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .project-tech-stack{
+    font-weight: 400;
+    margin: 10px;
+    font-size: 1.3rem;
+  }
+  .project-card div{
+  display: flex;
+  justify-content: center;
+  }
+  .project-description{
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 2rem;
+    margin: 1rem 0;
+   color: rgb(177, 246, 255);
+  }
+ 
+  
+  
+  
+  #contact {
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 80%;
+    margin: 3rem auto 6rem auto;
+    display: flex;
     
-    }
-    #contact{
-        
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+  }
+  #contact input{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    
+  }
+  .c-c1 img{
+    filter:drop-shadow( 0 0 40px #ffffff);
+  }
+  .c-c1{
+    width: 55%;
+  }
+  .contact-child-2{
+    width: 45%;
+  }
+  .btns{
+    margin-left: 30px;
+    padding: 5px 10px;
+    border: none;
+    width: 40%;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  .contact-child-2 form{
+    background-color: #88626281;
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    border: 1px solid white;
+    padding: 15px;
+    
+  }
+  .contact-child3{
+    display: block;
+  }
+  .contact-child4 a{
+    text-align: left;
+    display: flex;
+    color: rgb(243, 243, 243);
+    justify-content: center;
+    font-family: system-ui;
+    text-decoration: none;
+  }
+  .c-c1{
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+    gap:50px;
+  }
+  .c-c1 img{
+    width: 60px;
+    height: 50px;
+  }  
+  
+  
+  
+  
+  
+  .react-activity-calendar {
+   
+    text-align: center;
+    color: var(--primary-color);
+    
+    margin: 2rem auto;
+    width: 70%;
+    padding-bottom: 2em;
+    display: block;
+   
+  }
+ 
+    .react-activity-calendar img {
        
-    }
-    #contact>div{
-    
-        width: 100%;
-        height: 100%;
-    }
-    #contact>div img{
-        width: 100%;
-        height: 100%;
+      width: 70%;
+      margin-top: 50px;
+      margin-bottom: 10px;
+  }
+ 
+
+
+
+
+
+  @media (max-width:1200px) {
+    #contact {
+        width: 90%;
+        display: flex;
     }
 
+    #more {
+        text-align: center;
+        width: 20%;
+    }
+
+    #skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
-@media only screen and (min-width: 200px) and (max-width: 499px){
-    #desc{
-        margin-left: 10%;
-       
-      }
-      #about{
-        margin-left: -100px;
-              
-        display: grid;   
-        height: 600px;
-        
-        
+
+@media (max-width: 750px) {
+   
+
+
+    .navbar.active {
+        display: flex;
+    } */
+    #nav-menu ul {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        background-color: #000000;
     }
-    #abt{    
-        width: 80%;
+
+    #nav-menu ul li a {
+        padding: 14px 27px 10px 27px;
+        font-size: 1.1rem;
     }
-    #abt h1{
-        
-        margin-left: 150px;
-      
-        font-size: 1 rem;
+
+    #skills {
+        grid-template-columns: repeat(3, 1fr);
     }
-    #abt h4{
-        margin-left: 40px;
-       
+
+    .c-c1 {
+        width: 90%;
+    }
+
+    .contact-child-2 {
+        width: 90%;
+    }
+
+    #home {
+        padding-top: 6em;
+        display: block;
+        width: 90%;
+        margin: 0 auto 1em auto;
+    }
+
+    .child2 img {
+        margin-top: 6em;
         width: 300px;
+        border-radius: 20% 10%;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0);
+        transition: all 1s;
+      }
+
+    #home {
+        padding-top: 0;
     }
-    #pic{
+
+    #about h2 {
+        width: 90%;
+        margin: 1rem auto 3em auto;
+        font-size: 1.5rem;
+    }
+
+
+    #projects {
+        margin: 1rem;
+        display: block;
+    }
+
+    #contact {
+        width: 80%;
+        display: block;
+        padding: 2em;
+    }
+
+    .contact-child-2 {
+        width: 90%;
+    }
+
+    .contact-child-2 form {
+        width: 70%;
+    }
+}
+
+@media (max-width:768px) {
+    #skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .react-activity-calendar img {
+        width: 90%;
+    }
+
+
+    .child2 {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .child1 {
+        width: 70%;
+    }
+
+    .skills-card {
+        margin: 1.5rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .name img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto 0 auto;
+        height: 60px;
+        width: 90px;
+    }
+
+    .resumebtn {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .c-c1 img {
+        margin: 0rem auto 0 auto;
+        padding-bottom: 2rem;
+        display: block;
+        width: 90%;
+    }
+}
+@media (max-width:700px) {
+    #nav-menu ul li a {
+        padding: 14px 12px 10px 12px;
+        font-size: 1rem;
+    }
+    #nav-menu {
+      height: 50px;
+      }
+      .heading{
+        font-size: 2rem;
+      }
+}
+
+@media (max-width:600px) {
+   
+    .contact-child3{
         width: 100%;
-        
     }
-    #pic img{
-        margin-left: 35%;
-        margin-top: 10%;
-        width:150px;
-        height: 150px;
-        border: 10px wheat solid;
-        
-        
-    }
-    #skill{
-        height: auto; 
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:5px;
-    }
-    #project{
-  
-        width:100%;
-        height:auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:60px;
-    
-    }
-    #contact{
-        
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-       
-    }
-    #contact>div{
-    
+    .contact-child4{
         width: 100%;
-        height: 100%;
     }
-    #contact>div img{
-        width: 60%;
-        height: 60%;
+    .contact-child-2  {
+        margin: 0;
+    }
+    .contact-child-2 form {
+        width: 90%;
+    }
+    #contact-email{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #home {
+        width: 95%;
+        margin: 0 0 1em 0;
+    }
+
+
+    #about h2 {
+        width: 90%;
+        margin: 1rem auto 3em auto;
+        font-size: 1.1rem;
+    }
+
+    .child1 {
+        width: 80%;
+    }
+
+    #contact {
+        width: 96%;
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    /* #nav-menu {
+        height: 40px;
+        } */
+    #nav-menu ul li a {
+        padding: 14px 5px 1px 5px;
+        font-size: 14px;
+    }
+    #user-details {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .child1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .child1 {
+        width: 90%;
+    }
+
+    .child2 img {
+        width: 250px;
+    }
+
+    .child2 img:hover {
+        width: 260px;
+    }
+
+    .react-activity-calendar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .child1 {
+        width: 86%;
+    }
+
+
+    .c-c1 img {
+        margin: 0rem auto 0 auto;
+        padding-bottom: 2rem;
+        display: block;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .contact-child-2 {
+        width: 95%;
+    }
+
+    .contact-child-2 form {
+        width: 90%;
+    }
+
+    .child1 {
+        text-align: center;
+        padding: 0;
+        width: 90%;
     }
 
 }
