@@ -85,7 +85,7 @@ function skill(){
             <div class="skills-card-name  bar">
 
             </div>
-            <div class="skills-card-img name"><img src="/Resources/Hibernate.png" alt=""></div>
+            <div class="skills-card-img name"><img src="/Resources/multi.png" alt=""></div>
         </div>
 
         <div class="skills-card">
