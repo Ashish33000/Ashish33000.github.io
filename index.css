@@ -8,7 +8,7 @@
   body {
     background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65));
   }
-  .heading{
+  .mainheading{
     font-family: system-ui;
     text-align: center;
     font-size: 3rem;
@@ -429,7 +429,7 @@
     #nav-menu {
       height: 50px;
       }
-      .heading{
+      .mainheading{
         font-size: 2rem;
       }
 }
