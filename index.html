@@ -8,61 +8,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
   </head>
-  <body style="width:100%">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-secondary" class=".nav-link.home">
-    <a 
-    href="#"
-    class="navbar-brand mb-2 p text-black" id="nav-menu">    
-    Ashish Kumar
-    </a>
-     <button
-     type="button"
-     data-bs-toggle="collapse"
-     data-bs-target="#navbarNav"
-      class="navbar-toggler"class="mx-auto" 
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
-      <span class="navbar-toggler-icon"></span>
+  <body >
 
-     </button>
-     <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav ">
-            <li title="HOME" class="nav-item active" >
-                <a href="#home" class="nav-link active" >
-                    <h6 class="text-black">Home</h6>
-                </a>
-            </li>
-            <li title="ABOUT" class="nav-item active "class="nav-link about">
-                <a href="#about" class="nav-link active" >
-                    <h6 class="text-black">About</h6>
-                </a>
-            </li>
-            <li title="SKILLS" class="nav-item active" class="nav-link skills">
-                <a href="#skills" class="nav-link active" >
-                    <h6 class="text-black">Skill</h6> 
-                </a>
-            </li>
-            <li title="PROJECTS" class="nav-item active" class="nav-link projects">
-                <a href="#projects" class="nav-link active" >
-                    <h6 class="text-black">Project</h6>
-                </a>
-            </li>
-            <li title="RESUME" class="nav-item active" id="resume-link-1" class="nav-link resume">
-                <a  href="./Resources/Ashish_Kumar_Resume.pdf" target="_blank" download="./Resources/Ashish_Kumar_Resume.pdf" class="nav-link active"  >
-                    <h6 class="text-black">RESUME</h6>
-                </a>
-            </li>
-           
-            <li title="CONTACT" class="nav-item active" class=".nav-link.contact" >
-                <a href="#contact" class="nav-link active">
-                    <h6 class="text-black">Contact</h6>
-                </a>
-            </li>
-        </ul>
-     </div>
-    </nav>
+    <header>
+       
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+         <nav class="navbar" id="nav-menu">
+           <ul>
+            <li title="HOME"><a class="nav-link home" href="#home"><span> HOME</span></a></li>
+            <li title="ABOUT"><a class="nav-link about" href="#about"><span> ABOUT</span></a></li>
+            <li title="SKILLS"><a class="nav-link skills" href="#skills"><span>SKILLS</span> </a></li>
+            <li title="PROJECTS"><a class="nav-link projects" href="#projects"><span>PROJECTS</span></a></li>
+            <li title="CONTACT"><a class="nav-link contact" href="#contact"><span>CONTACT</span> </a></li>
+            <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
+                    href="/Resources/Ashish_Kumar_Resume.pdf" target="_blank" download="Ashish_Kumar_Resume.pdf"><span
+                    >RESUME</span> </a></li>
+              
+           </ul>
+         </nav>
+       </header>
+
     <!-- home -->
     <section title="Home" id="home">
         <div class="child2">
@@ -187,8 +153,8 @@
             <title class="project-title">Himalaya USa website</title>
             <h3 class="project-tech-stack">Html | CSS | JavaScript</h3>
             <div>
-                <p class="project-github-link"> <a href="https://github.com/raj2820/Himalya-USA-Clone"
-                        target="_blank" ><i class="fa-brands fa-github"></i>Github</a></p>
+                <p class="project-github-link"> <a href="https://github.com/raj2820/Himalya-USA-Clone
+                        target="_blank"><i class="fa-brands fa-github"></i>Github</a></p>
 
                 <p class="project-deployed-link"><a href="https://630c7ea5fe01ec7d8a7acb5f--aquamarine-khapse-1fb54c.netlify.app/"
                         target="_blank">Deployed link</a></p>
@@ -202,10 +168,8 @@
             <title class="project-title">Software And Hardware Support system</title>
             <h3 class="project-tech-stack">JAVA | JDBC | MYSQL</h3>
             <div>
-                <p class="project-github-link"><a href="https://github.com/Ashish33000/Hardware_And_Software_Support_System" ><i
+                <p class="project-deployed-link"><a href="https://github.com/Ashish33000/Hardware_And_Software_Support_System"><i
                             class="fa-brands fa-github"></i>Github</a></p>
-                 <p class="project-deployed-link"><a href="#"
-                                target="_blank">Deployed link</a></p>                    
              
                 </p>
             </div>
@@ -219,11 +183,9 @@
             <title class="project-title">Course Monitoring System</title>
             <h3 class="project-tech-stack">JAVA | JDBC | MYSQL</h3>
             <div>
-                <p class="project-github-link"><a href="https://github.com/Ashish33000/Course_Monitoring_System" ><i
+                <p class="project-deployed-link"><a href="https://github.com/Ashish33000/Course_Monitoring_System"><i
                             class="fa-brands fa-github"></i>Github</a>
                 </p>
-                <p class="project-deployed-link"><a href="#"
-                                target="_blank">Deployed link</a></p>   
                
             </div>
 
@@ -236,10 +198,8 @@
             <title class="project-title">Plant and Nursary Application</title>
             <h3 class="project-tech-stack">JAVA | SpringBoot| Spring Security| MYSQL | swagger</h3>
             <div>
-                <p class="project-github-link"><a href="https://github.com/shubhamrasam/max-oranges-6244"  ><i
+                <p class="project-deployed-link"><a href="https://github.com/shubhamrasam/max-oranges-6244"><i
                             class="fa-brands fa-github"></i>GitHub</a></p>
-                           <p class="project-deployed-link"><a href="#"
-                            target="_blank">Deployed link</a></p>              
                 
             </div>
         </div>
@@ -264,13 +224,13 @@
     </section>
 
   
-    <h1 class="mainheading">CONTACT</h1>
+    <h1 class="heading">CONTACT</h1>
     <div title="Contact" id="contact">
         <div class="c-c1">
             <a href="https://www.linkedin.com/in/ashish-kumar-5199ba120/">
                 <img src="Resources/linked.png" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/ashish-kumar-5199ba120/" >
+            <a href="https://www.linkedin.com/in/ashish-kumar-5199ba120/">
                 <img src="Resources/github.png" alt="">
             </a>
             
@@ -284,8 +244,8 @@
                 <div><button class="btns" type="submit">Submit</button></div>
             </form>
             <div class="contact-child3">
-                <div class="lindingithub"> <a id="contact-github" href="https://github.com/Ashish33000" ></a>
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/ashish-kumar-5199ba120/" ></a>
+                <div class="lindingithub"> <a id="contact-github" href="https://github.com/Ashish33000"></a>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/ashish-kumar-5199ba120/"></a>
                 </div>
                 <div class="contact-child4">
                 <a id="contact-phone" href="#">Contact Number: +918709428265</a>
