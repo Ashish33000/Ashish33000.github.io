@@ -4,326 +4,90 @@ body{
 }
 
 
-
-
-
-/* desccription */
-#desc{
-  margin-top: 150px; 
-  margin-left: 30%;
-  height: 200px;
-
-   
-}
-#desc h1{
-    color: rgb(20, 19, 19);
-}
-#desc button{
-    border: 0px;
-    background-color: rgb(31, 30, 30);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
   
-    border-radius: 8px;
-    padding: 10px 10px;
+  body {
+    background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65));
+  }
 
-}
-#desc button a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(248, 247, 247);    
-}
-#desc button:hover{
-    background-color: rgb(68, 190, 190);   
-}
-/* about */
-#about{
-    margin: auto;
-    display: flex;   
-    height: 300px;
-    justify-content: center;
-    flex-wrap: wrap;   
-}
-#abt{    
-    width: 60%;
-}
-#abt h1{
-    margin-left: 60px;
-    color: rgb(15, 14, 14);
-    font-size: 2 rem;
-}
-#abt h4{
-    margin-left: 40px;
-    color: rgb(14, 13, 13); 
-    width: 600px;
-}
-#pic{
-    width: 30%;
-    
-}
-#pic img{
-    margin-left: 15%;
-    margin-top: 10%;
-    width:200px;
-    height: 200px;
-    border: 10px rgb(179, 163, 134) solid;
-    
-    
-}
-/* skill */
-#skill{
-    height: auto; 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:5px;
-}
-#skill>div{
-    
-    width: 80%;
-    height: 80%;
-
-}
-#skill img{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-}
-/* Project */
-#project{
-  
-    width:90%;
-    margin:auto ;
-    height:auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:50px;
-    margin-bottom: 30px;
-
-}
-#project>div{
-  box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width:auto;
-    height:600px;
-
-}
-
-#c1{
-  
-  width:100%;
-  height:55% ;
-}
-#c1 img{
-  width: 100%;
-  height: 100%;
-}
-#c2{
-  background-color: green;
-  width:100%;
-  height:45% ;
-
-}
-#c2 h4,#c2 p{ 
-  margin-left: 25px;
-}
-#c2>button{
-  background-color: black;
-  padding:5px 5px;
-  margin-left: 20px;
-  border-radius: 5%;
-}
-#c2>button a{
-  text-decoration: none;
-  color: rgb(23, 44, 63);
-  font-size: 1.3rem;;
- 
-}
-#contact{
-  margin-top: 5px;
-  
-  height: 300px;
-  width:100%;
-  background-color: black;
-  font-size: 0.6rem;
-}
-#contact h1{
-  color: rgb(24, 22, 22);
-  margin-left: 100px;
-}
-#contact img{
-  width:50px;
-  height: 50px;
-  margin-top: 30px;
-  margin-left:100px ;
-  border-radius: 10px;
-}
-/* contact */
-#contact{
-   
-    background-color: black;
+  header{
+    position: fixed;
+    height: 60px;
+    top: 0;left: 0;right: 0;
+    background: #2b1414;
+    box-shadow: 0 20px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
     display: flex;
-    gap:20px;
-    font-size: 1.2rem;
-    color: white;
-}
-#contact>div{
-    
-    width: 25%;
-    height: 100%;
-}
-#contact>div img{
-    width: 60%;
-    height: 60%;
-}
-#contact h3{
-    margin-top: 20%;
-    margin-left: 10%;
-}
-#contact p{    
-    margin-left: 10%;
-}
-
-
-@media only screen and (min-width: 500px) and (max-width: 768px){
-    #desc{        
-        margin-left: 15%;     
-      
-      }
-      #about{
-       
-        margin: auto;
-        display: grid;   
-        height: 500px;
-        
-        
-    }
-    #abt{    
-        width: 80%;
-    }
-    #abt h1{
-        
-        margin-left: 150px;
-       
-        font-size: 1 rem;
-    }
-    #abt h4{
-        margin-left: 40px;
-       
-        width: 400px;
-    }
-    #pic{
-        width: 100%;
-        
-    }
-    #pic img{
-        margin-left: 35%;
-        margin-top: 10%;
-        width:150px;
-        height: 150px;
-        border: 10px wheat solid;
-        
-        
-    }
-    #skill{
-        height: auto; 
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:5px;
-    }
-    #project{
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
   
-        width:100%;
-        height:auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:60px;
-    
-    }
-    #contact{
-        
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-       
-    }
-    #contact>div{
-    
-        width: 100%;
-        height: 100%;
-    }
-    #contact>div img{
-        width: 100%;
-        height: 100%;
-    }
+  header .navbar ul li{
+    list-style: none;
+    float: left;
+  }
+  header .navbar ul li a{
+    font-size: 16px;   
+    padding: 10px;
+    color: rgb(230, 222, 222);
+    display: block;
+    font-weight: bold;
+  }
+  header .navbar ul li a:hover{ 
+    color: rgb(88, 42, 42);  
+  }
+  #menu-bar{
+    display: none;
+  }
+  header label{
+    font-size: 20px;
+    color:#333 ;
+    cursor: pointer;
+    display: none;
+  }
 
-}
-@media only screen and (min-width: 200px) and (max-width: 499px){
-    #desc{
-        margin-left: 10%;
-       
-      }
-      #about{
-        margin-left: -100px;
-              
-        display: grid;   
-        height: 600px;
-        
-        
-    }
-    #abt{    
-        width: 80%;
-    }
-    #abt h1{
-        
-        margin-left: 150px;
-      
-        font-size: 1 rem;
-    }
-    #abt h4{
-        margin-left: 40px;
-       
-        width: 300px;
-    }
-    #pic{
-        width: 100%;
-        
-    }
-    #pic img{
-        margin-left: 35%;
-        margin-top: 10%;
-        width:150px;
-        height: 150px;
-        border: 10px wheat solid;
-        
-        
-    }
-    #skill{
-        height: auto; 
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:5px;
-    }
-    #project{
-  
-        width:100%;
-        height:auto;
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap:60px;
-    
-    }
-    #contact{
-        
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-       
-    }
-    #contact>div{
-    
-        width: 100%;
-        height: 100%;
-    }
-    #contact>div img{
-        width: 60%;
-        height: 60%;
-    }
+
+
+
+
+
+
+@media only screen and (min-width: 400px) and (max-width: 768px){
+    header{
+        padding: 20px;    
+          } 
+          header label{
+            display: initial;
+          } 
+          header .navbar{
+            position: absolute;
+            top:100%;left: 0;right: 0;
+            background-color: #885555;
+            border-top: 1px solid rgba(72, 163, 44, 0.1) ;
+            display: none;
+          }
+          header .navbar ul li{   
+            width: 100%;
+          }
+          header .navbar ul li ul{   
+           position: relative;
+           width: 100%;
+          }
+         
+          #menu-bar{
+              color: white;
+              font-weight: bold;
+            }
+          #menu-bar:checked ~.navbar{
+            display: initial;
+            
+          }
+   
 
 }
