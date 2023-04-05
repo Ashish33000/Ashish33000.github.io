@@ -14,6 +14,15 @@ body{
   body {
     background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65),rgb(19, 174, 197));
   }
+  .mainheading{
+    font-family: system-ui;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 2px var(--primary-color);
+    color: rgb(0, 0, 0);
+  }
 
   header{
     position: fixed;
@@ -86,6 +95,93 @@ body{
 #resume-button-2 a:hover{
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+/* about */
+#about {
+    padding-top: 10em;
+    display: flex;
+    width: 99%;
+    margin: 0 auto 5em auto;
+  }
+  
+  .child1 {
+    width: 50%;
+    margin: 1rem auto;
+  
+  }
+  
+  .child2 {
+    width: 50%;
+    margin: 0 auto;  
+    justify-content: flex-end;
+    padding: 0 50px;
+  }
+  .child1 h1 {
+ font-size: 1rem;
+
+  
+  }
+  .child2 img {
+    width: 300px;
+    border-radius: 5% 5%;
+    box-shadow: 2px 2px 10px rgb(161, 40, 40);
+    transition: all 1s;
+  }
+  .child2 img:hover{
+   /* width: 310px; */
+   transform: translateX(-5rem);
+   box-shadow: 2px 2px 10px rgb(103, 212, 239),  -2px -2px 10px rgb(48, 57, 128);
+   object-fit: contain;
+   cursor: pointer;
+  }
+  .child1 h2 {
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1rem rgb(11, 10, 10);
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: para;
+  } 
+  
+  
+  .child1 h2 {
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: para;
+  }
+
+  #skills{
+    display: grid;
+    width: 80%;
+    margin:  0 auto;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .skills-card{
+    margin: 2rem;
+  }
+  
+  .name img {
+    margin-top: -5px;
+    height: 150px;
+    object-fit: contain;
+    width:130px;
+    background-color: #ffffff3c;
+    border: 2px solid rgba(255, 255, 255, 0.645);
+  }
+
+
+ .name:hover{
+ transform: translatey(-1rem);
+ box-shadow: 1px 1px 10px rgb(38, 139, 60),  -2px -2px 10px rgb(8, 20, 110);
+ object-fit: contain;
+ cursor: pointer;
 }
 
 
