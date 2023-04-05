@@ -12,7 +12,7 @@ body{
   }
   
   body {
-    background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65));
+    background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65),rgb(19, 174, 197));
   }
 
   header{
@@ -51,7 +51,76 @@ body{
     cursor: pointer;
     display: none;
   }
+/* home */
+#home {
+    padding-top: 10em;
+    display: flex;
+    width: 90%;
+    margin: 0 auto 5em auto;
+  }
+  
+  .child1 {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 30px 30px 0 30px;
+  }
+  #user-details {
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1rem rgb(122, 70, 70);
+  }
+  
+  .child2 {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 50px;
+  }
+  
+  .child2 img {
+    width: 250px;
+    border-radius: 5% 5%;
+    box-shadow: 2px 2px 10px rgb(161, 40, 40);
+    transition: all 1s;
+  }
+  .child2 img:hover{
+   /* width: 310px; */
+   transform: translateX(-5rem);
+   box-shadow: 2px 2px 10px rgb(103, 212, 239),  -2px -2px 10px rgb(48, 57, 128);
+   object-fit: contain;
+   cursor: pointer;
+  }
+  
+  
+  .child1 h1 {
+    font-size: 2.5rem;
+  text-shadow: 2px 2px 2px  rgb(255, 255, 255);
+  
+  }
+  
+  .child1 h2 {
+    color: white;
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1rem rgb(255, 255, 255);
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-name: para;
+  }
+  #resume-button-2{
+    background-color: rgb(0, 9, 128);
+    padding: 10px 15px;
+    color: white;
 
+  }
+  #resume-button-2 a{
+    text-decoration: none;
+    
+
+  }
+  /* home */
 
 
 
