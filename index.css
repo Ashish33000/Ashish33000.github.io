@@ -12,7 +12,7 @@ body{
   }
   
   body {
-    background:  linear-gradient(to right, rgb(52, 2, 110), rgb(224, 78, 21),rgb(15, 58, 65),rgb(19, 174, 197));
+    background:  #0C134F;
   }
   .mainheading{
     font-family: system-ui;
@@ -21,14 +21,14 @@ body{
     font-weight: 400;
     margin: 2rem 0;
     text-shadow: 2px 2px 2px var(--primary-color);
-    color: rgb(0, 0, 0);
+    color:  white;
   }
 
   header{
     position: fixed;
     height: 60px;
     top: 0;left: 0;right: 0;
-    background: #2b1414;
+    background: #FC4F00;
     box-shadow: 0 20px 10px rgba(0,0,0,.1);
     padding: 0px 7%;
     display: flex;
@@ -51,7 +51,7 @@ body{
     font-weight: bold;
   }
   header .navbar ul li a:hover{ 
-    color: rgb(88, 42, 42);  
+    color: #0C134F;
   }
   #menu-bar{
     display: none;
@@ -77,11 +77,11 @@ body{
     font-size: 50px;
 }
 .line2{
-    color: rgb(46, 22, 185);
+    color: white;
     font-size: 60px;
 }
 #resume-button-2{
-    background-color: #060606;
+    background-color: #FC4F00;
     margin-top: 20px;    
     padding: 10px 25px;
     border-radius: 5px;
@@ -95,7 +95,7 @@ body{
     
 }
 #resume-button-2 a:hover{
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ body{
   .child2 img {
     width: 300px;
     border-radius: 5% 5%;
-    box-shadow: 2px 2px 10px rgb(161, 40, 40);
+    box-shadow: #FC4F00;
     transition: all 1s;
   }
   .child2 img:hover{
@@ -191,7 +191,7 @@ body{
 /* projects */
 #projects{
     margin: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow:  white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -238,7 +238,7 @@ body{
   .react-activity-calendar {
    
     text-align: center;
-    color: var(--primary-color);
+    color:  white;;
     
     margin: 2rem auto;
     width: 70%;
@@ -256,7 +256,7 @@ body{
 
 /* contact */
   #contact {
-    background-color: black;
+    background-color: #FC4F00;
     width: auto;
     height: auto;
     display: flex;
@@ -525,7 +525,7 @@ font-size: 1rem;
 .child2 img {
   width: 100px;
   border-radius: 5% 5%;
-  box-shadow: 2px 2px 10px rgb(161, 40, 40);
+  box-shadow: #FC4F00;
   transition: all 1s;
 }
 .child2 img:hover{
@@ -685,8 +685,8 @@ font-size: 1rem;
           header .navbar{
             position: absolute;
             top:100%;left: 0;right: 0;
-            background-color: #885555;
-            border-top: 1px solid rgba(72, 163, 44, 0.1) ;
+            background-color:#FC4F00;
+            border-top: 1px solid white;
             display: none;
           }
           header .navbar ul li{   
