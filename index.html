@@ -21,9 +21,13 @@
             <li title="SKILLS"><a class="nav-link skills" href="#skills"><span>SKILLS</span> </a></li>
             <li title="PROJECTS"><a class="nav-link projects" href="#projects"><span>PROJECTS</span></a></li>
             <li title="CONTACT"><a class="nav-link contact" href="#contact"><span>CONTACT</span> </a></li>
-            <li title="RESUME" id="resume-button-1"><a class="nav-link resume" id="resume-link-1"
-                    href="/Resources/Ashish-Kumar-Resume.pdf" target="_blank" download="./Resources/Ashish-Kumar-Resume"><span
-                    >RESUME</span> </a></li>
+            <li title="RESUME" id="resume-button-1">
+                <a class="nav-link resume" id="resume-link-1" href="/Resources/Ashish-Kumar-Resume.pdf" target="_blank" download="Ashish-Kumar-Resume.pdf">
+                    <span>RESUME</span>
+                </a>
+            </li>
+            
+            
               
            </ul>
          </nav>
@@ -265,10 +269,12 @@
 </body>
 </html>
 <script>
-     document.getElementById("resume-button-1").addEventListener("click",()=>{
-        window.location.assign("https://drive.google.com/file/d/1K_mMo90UG5nw47cNcN9YO_i1AEwLTNsL/view?usp=share_link","_blank");
-    })
-    document.getElementById("resume-button-2").addEventListener("click",()=>{
-        window.location.assign("https://drive.google.com/file/d/1K_mMo90UG5nw47cNcN9YO_i1AEwLTNsL/view?usp=share_link","_blank");
-    })
+    document.getElementById("resume-button-1").addEventListener("click", () => {
+        window.open("https://drive.google.com/file/d/1_4WpV0lZ8o_PO2tef7FYLvUW_-XX9UvO/view?usp=drive_link", "_blank");
+    });
+
+    document.getElementById("resume-button-2").addEventListener("click", () => {
+        window.open("https://drive.google.com/file/d/1_4WpV0lZ8o_PO2tef7FYLvUW_-XX9UvO/view?usp=drive_link", "_blank");
+    });
 </script>
+
